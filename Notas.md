@@ -65,6 +65,26 @@ void loop() {
   }
 }
 ```
+```
+int led = 3;
+int time = 500;
+void setup() {
+  pinMode(led, OUTPUT);
+}
 
+void loop() {
+  analogWrite(led, 0);//brillo al 0%
+  delay(time);
+  analogWrite(led, 64);//brillo al 25%
+  delay(time);
+  analogWrite(led, 128);//brillo al 50%
+  delay(time);
+  analogWrite(led, 192);//brillo al 75%
+  delay(time);
+  analogWrite(led, 255);//brillo al 100%
+  delay(time);
+}
+```
+Otro ejemplo de PWD
 
 
